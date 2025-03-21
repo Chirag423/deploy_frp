@@ -64,7 +64,24 @@
   ```
   cd frp_0.61.2_linux_amd64
   ```
+- modify frpc.toml.
+  - ``` nano frpc.toml ``` 
+  - ```
+    serverAddr = "x.x.x.x"
+    serverPort = 7000
+    auth.token = "my-secret-key"
+    loginFailExit = false
 
-
+    [[proxies]]
+    name = "websitetest"
+    type = "tcp"
+    localPort = 8080
+    remotePort = 8080
+    ```
+    - replace serverAddr with your AWS EC2 instance's public ip.
+- run frpc
+  - ```
+    ./frpc -c ./frpc.toml
+    ```
       
     
