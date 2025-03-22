@@ -83,5 +83,10 @@
   - ```
     ./frpc -c ./frpc.toml
     ```
-      
-    
+
+
+### To access you client from any machine 
+```
+x.x.x.x:8080
+```
+- where x.x.x.x is the public ip of your proxy server.
