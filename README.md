@@ -90,3 +90,5 @@
 x.x.x.x:8080
 ```
 - where x.x.x.x is the public ip of your proxy server.
+  ![Screenshot from 2025-03-17 10-08-30](https://github.com/user-attachments/assets/6bbc690b-23e3-4dac-a36b-8f1b743d7093)
+
